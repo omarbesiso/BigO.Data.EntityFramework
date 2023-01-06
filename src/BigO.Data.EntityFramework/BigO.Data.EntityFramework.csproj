@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GenerateDocumentationFile>False</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>BigO Entity Framework Helpers</Title>
+		<Product>BigO Library</Product>
+		<Description>The package contains useful utilities for development with Entity Framework Core on SQL Server.</Description>
+		<Copyright>Copyright © Omar Besiso 2022</Copyright>
+		<PackageProjectUrl>https://github.com/omarbesiso/BigO.Core</PackageProjectUrl>
+		<PackageIcon>bigo.png</PackageIcon>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/omarbesiso/BigO.Core.git</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<Authors>Omar Besiso</Authors>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BigO.Core" Version="1.2.1" />
+		<PackageReference Include="Microsoft.NETCore.Platforms" Version="7.0.0" />
+		<!-- ReSharper disable once VulnerablePackage -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Resources\bigo.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</Resource>
+	</ItemGroup>
+
+</Project>
